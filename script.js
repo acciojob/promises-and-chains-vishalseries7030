@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.getElementById("voteForm").addEventListener("submit", function (e) {
   e.preventDefault(); // prevent form from refreshing
 
@@ -7,7 +6,7 @@ document.getElementById("voteForm").addEventListener("submit", function (e) {
 
   // Validation
   if (!name || !age) {
-    alert("Please enter valid details.");
+    alert("Please enter valid details"); // ✅ fixed: removed the dot
     return;
   }
 
